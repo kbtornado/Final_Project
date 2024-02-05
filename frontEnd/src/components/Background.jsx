@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim"; // if you are going t
+import "../styles/Background.css";
 const Background = () => {
 
 const [init, setInit] = useState(false);
@@ -91,11 +92,17 @@ const [init, setInit] = useState(false);
 
   if (init) {
     return (
-      <Particles
-        id="tsparticles"
-        particlesLoaded={particlesLoaded}
-        options={options}
-      />
+        <div>
+            <Particles
+                    id="tsparticles"
+                    particlesLoaded={particlesLoaded}
+                    className="background"
+                    options={options}
+                    
+            >
+                    
+            </Particles>
+        </div>
     );
   }
 };

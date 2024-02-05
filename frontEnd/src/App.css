@@ -46,3 +46,13 @@
     top: 0;
     z-index: -1;
 }
+
+
+.mydiv{
+    display: flex;
+    flex-direction: column;
+  }
+
+body{
+    margin-bottom: 80px;
+}
